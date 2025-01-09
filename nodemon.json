@@ -1,0 +1,9 @@
+{
+  "watch": ["./payload", "./payload.config.ts", "./constants.ts"],
+  "ext": "ts,tsx,json",
+  "ignore": ["./.git", "./node_modules/**/node_modules", "./.next", "./public", "./dist"],
+  "events": {
+    "restart": "echo 'Found a change for payload. Restarting the server to apply the changes...'"
+  },
+  "exec": "next dev --experimental-https --turbopack"
+}
